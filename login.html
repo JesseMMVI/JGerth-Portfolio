@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <a  href="index.html"><button class="goback">Go back</button></a>
+    <div class="loginform">
+        <h1>Personal Login</h1>
+        <input class="email" type="email" id="email" name="email" placeholder="E-Mail">
+        <input class="pswrd" type="password" id="password" name="password" placeholder="Password">
+        <a  href=><button class="login">Login</button></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    import { 
+        getAuth,
+        connectAuthEmulator,
+        signInWithEmailAndPassword 
+    } from "firebase/auth";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyCypUUxuHBGL5DKyWa-CwyvqJItDJIOm8c",
+    authDomain: "recruitment-portfolio.firebaseapp.com",
+    projectId: "recruitment-portfolio",
+    storageBucket: "recruitment-portfolio.appspot.com",
+    messagingSenderId: "677966299367",
+    appId: "1:677966299367:web:a8e38098ee168302626242",
+    measurementId: "G-W1J487S6YM"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth(firebaseApp);
+    connectAuthEmulator(auth, "http://localhost:9099")
+
+    const loginEmailPassword = async () => {
+        const loginEmail = email.value;
+        const loginPassword = password.value;
+
+        const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+        console.log(userCredential.user);
+    }
+</script>
+</html>

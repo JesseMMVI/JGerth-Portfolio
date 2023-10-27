@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="discription" content="Explore the journey of Jesse Gerth, a promising Dutch tennis player with a passion for success both on and off the court. Jesse, born in 2006, aspires to play college tennis in the United States starting in fall 2024. Discover his powerful serve, dedication to academics, and commitment to personal growth. This website provides a window into Jesse's world, where winning, development, and academic excellence converge in the pursuit of a successful college tennis career.">
+    <title>Jesse Gerth - Dutch tennisplayer | United States college tennis recruitment portfolio</title>
+    <link rel="canonical" href="https://jgerth.com/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/JG Logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <a  href="login.html"><button class="login"><span class="material-symbols-outlined">
+        login
+        </span></button></a>
+    <div class="content">
+        <div class="header">
+            <h1>JESSE GERTH</h1>
+            <h3>Jesse Gerth, a right-handed player hailing from the Netherlands, is a dedicated student-athlete with impressive academic credentials and a lot of upside in his tennis game. He is currently pursuing his education at the highest academic high school in the Netherlands, maintaining an outstanding GPA of 3.78. Jesse has showcased his commitment to education by scoring 1320 on the SAT and an impressive 140 on the Duolingo English Test. He is interested in playing for a college team starting in the Fall of 2024.</h3>
+            <div class="recruit1"><button onclick="window.location.href='https://www.slamstox.com/athlete/jesse-gerth';"class="recruit2">Go to Slamstox</button></div>
+        </div>
+    
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="img/1.jpg" alt="Action photo 1">
+                </div>
+                <div class="item">
+                    <img src="img/2.jpg" alt="Action photo 2">
+                </div>
+                <div class="item">
+                    <img src="img/3.jpg" alt="Action photo 3">
+                </div>
+                <div class="item">
+                    <img src="img/4.jpg" alt="Action photo 4">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="about">
+            <h2>About Jesse Gerth</h2>
+            <p>Jesse boasts a formidable arsenal on the tennis court, with his service and forehand being his standout weapons. His physical and mental strength, combined with exceptional speed around the court, make him a dangerous player in many situation. He moves exceptionally well for a player his height (6'4) and has a lot of upside to further improve his aggressive gamestyle. We believe that his game would transition well to the US hard courts and that he can make a serious impact on many college teams. Jesse is known for his sociable and team-oriented personality. His ability to connect with others and work collaboratively reflects his character as a true team player. Furthermore, he comes from a true tennis family, highlighting his deep-rooted connection to the sport!</p>
+              
+            <p>While Jesse excels in many aspects of the game, he is committed to elevating his volleys to use them as a more frequent weapon. Additionally, he is working on enhancing his footwork for improved court positioning, aiming to elevate his overall game. With his big frame and strong serve, Jesse has the potential to become a very good doubles player. With a strong desire to excel, Jesse's goal is to break into the top 25 rankings in the Netherlands, a testament to his ambition and determination. During his time in college he wants to become the best version of himself, while also putting focus on his academics. </p>
+            
+            <p>Jesse has been an active participant in junior tournaments since the age of twelve. He has also made significant contributions to regional competitions with his club league team. His journey in senior tournaments began at the age of 15, starting at level 8 and progressing to his current ranking in the 4/3 category. Jesse continues to compete in senior categories, and his continuous involvement reflects his commitment to growth as a player. Throughout his development, he has received guidance and training from the same coach at Leeuwenbergh since he was 12.</p>
+
+            <p>Jesse's commitment to excellence extends beyond the tennis court to his academic pursuits. Graduating from the highest academic high school in the Netherlands and maintaining a GPA of 3.78 showcases his dedication to education. His strong performance on standardized tests, with a score of 1320 on the SAT and 140 on the Duolingo English Test, underscores his commitment to academic success. Jesse is planning on graduating in June 2024 and will enroll in college as a freshman. Jesse aspires to study engineering and is actively exploring various pathways within the field.</p>
+        </div>
+
+        <div class="details">
+            <h2>Details:</h2>
+            <div class="grid">
+                <div class="container">Sport:<br>Men's Tennis</div>
+                <div class="container">Entry semester:<br>Fall 2024</div>
+                <div class="container">Country:<br>Netherlands</div>
+                <div class="container">GPA:<br>3.78</div>
+                <div class="container">SAT:<br>1320</div>
+                <div class="container">Duolingo:<br>140</div>
+            </div>
+        </div>
+
+        <div class="video">
+            <h2>Jesse's video:</h2>
+            <div class="youtube"><iframe width="100%" height="100%"src="https://www.youtube.com/embed/swjmRIVu8JI?si=A7N6QYyf0j9SkVHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyCypUUxuHBGL5DKyWa-CwyvqJItDJIOm8c",
+        authDomain: "recruitment-portfolio.firebaseapp.com",
+        projectId: "recruitment-portfolio",
+        storageBucket: "recruitment-portfolio.appspot.com",
+        messagingSenderId: "677966299367",
+        appId: "1:677966299367:web:a8e38098ee168302626242",
+        measurementId: "G-W1J487S6YM"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>
